@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Card</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h5>OUR CAPABILITIES</h5>
+      <div class="content-description">
+        <h2>
+          End-to-End and <br />
+          Everything in Between
+        </h2>
+        <div class="description">
+          Whether it's across the entire lifecycle of anywhere in between, our
+          <br />
+          end-to-end solutions bring all the products and services medtech<br />
+          companies need together under one roof. Our vertical integration<br />
+          enables you to streamline your supply chain and reduce costs.
+          <div class="description-button">
+            <p>VIEW ALL CAPABILITIES</p>
+            <img src="./Images/chevron.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="capability">
+      <img class="card" src="./Images/Capability-Cards.png" alt="" />
+      <img class="card1" src="./Images/Capability-Cards (1).png" alt="" />
+      <img class="card2" src="./Images/Capability-Cards (2).png" alt="" />
+      <img class="card3" src="./Images/Capability-Cards (3).png" alt="" />
+      <img class="card4" src="./Images/Capability-Cards (4).png" alt="" />
+    </div>
+    <div class="cards">
+      <div class="design-dev-card">
+        <img src="./Images/Capability-Cards.png" alt="" />
+        <img class="myBtn" src="./Images/Design-dev2.png" alt="" />
+        <!-- Trigger/Open The Modal -->
+        <!-- <button id="myBtn">Open Modal</button> -->
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>DEMO POP UP</h2>
+          </div>
+        </div>
+        <img src="./Images/Design-dev1.png" alt="" />
+      </div>
+      <div class="design-dev-card">
+        <img src="./Images/Capability-Cards (1).png" alt="" />
+        <img class="myBtn" src="./Images/Man in fire.png" alt="" />
+        <div id="myModal2" class="modal">
+          <!-- Modal content -->
+          <div class="modal2-content">
+            <span class="close">&times;</span>
+            <h2>DEMO POP UP</h2>
+          </div>
+        </div>
+        <img src="./Images/material.png.png" alt="" />
+      </div>
+      <div class="design-dev-card">
+        <img src="./Images/Capability-Cards (2).png" alt="" />
+        <img class="myBtn" src="./Images/Medical.png" alt="" />
+        <div id="myModal3" class="modal">
+          <!-- Modal content -->
+          <div class="modal3-content">
+            <span class="close">&times;</span>
+            <h2>DEMO POP UP</h2>
+          </div>
+        </div>
+        <img src="./Images/Medical M.png" alt="" />
+      </div>
+      <div class="design-dev-card">
+        <img src="./Images/Capability-Cards (3).png" alt="" />
+        <img class="myBtn" src="./Images/Assembly.png" alt="" />
+        <div id="myModal4" class="modal">
+          <!-- Modal content -->
+          <div class="modal4-content">
+            <span class="close">&times;</span>
+            <h2>DEMO POP UP</h2>
+          </div>
+        </div>
+        <img src="./Images/Assembly M.png" alt="" />
+      </div>
+      <div class="design-dev-card">
+        <img src="./Images/Capability-Cards (4).png" alt="" />
+        <img class="myBtn" src="./Images/Finish Picture.png" alt="" />
+        <div id="myModal5" class="modal">
+          <!-- Modal content -->
+          <div class="modal5-content">
+            <span class="close">&times;</span>
+            <h2>DEMO POP UP</h2>
+          </div>
+        </div>
+        <img src="./Images/Finish disc.png" alt="" />
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementsByClassName("modal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementsByClassName("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close");
+
+    // When the user clicks the button, open the modal
+    btn[0].onclick = function () {
+      modal[0].style.display = "block";
+    };
+
+    btn[1].onclick = function () {
+      modal[1].style.display = "block";
+    };
+
+    btn[2].onclick = function () {
+      modal[2].style.display = "block";
+    };
+
+    btn[3].onclick = function () {
+      modal[3].style.display = "block";
+    };
+
+    btn[4].onclick = function () {
+      modal[4].style.display = "block";
+    };
+    // When the user clicks on <span> (x), close the modal
+    span[0].onclick = function () {
+      modal[0].style.display = "none";
+    };
+
+    span[1].onclick = function () {
+      modal[1].style.display = "none";
+    };
+
+    span[2].onclick = function () {
+      modal[2].style.display = "none";
+    };
+
+    span[3].onclick = function () {
+      modal[3].style.display = "none";
+    };
+
+    span[4].onclick = function () {
+      modal[4].style.display = "none";
+    };
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal[0]) {
+        modal[0].style.display = "none";
+      }
+      if (event.target == modal[1]) {
+        modal[1].style.display = "none";
+      }
+      if (event.target == modal[2]) {
+        modal[2].style.display = "none";
+      }
+      if (event.target == modal[3]) {
+        modal[3].style.display = "none";
+      }
+      if (event.target == modal[4]) {
+        modal[4].style.display = "none";
+      }
+    };
+  </script>
+</html>
